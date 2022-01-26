@@ -39,7 +39,17 @@ function Titulo(props) {
   export default function PaginaInicial() {
     //const username = 'rafazolondek';
     const [username, setUsername] = React.useState('rafazolondek');
+    const [followerUser, setFollowersUser] = React.useState("a");
     const roteamento = useRouter();
+
+    //Trazendo mais dados da API do GitHub
+    /*const dados = fetch(`https://api.github.com/users/${username}`).then(function(respostaDoServidor){
+      console.log(respostaDoServidor, respostaDoServidor.json())
+
+    })*/
+    fetch(`https://api.github.com/users/${username}`)
+    .then((res) => res.json())
+    .then((json) => setFollowersUser(json.followers)); 
 
   
     return (
@@ -167,6 +177,19 @@ function Titulo(props) {
               >
                 {username}
               </Text>
+
+              
+              <p>             
+                {followerUser} <span>seguidores</span>
+                <style jsx>{`
+                p {
+                  color: white;
+                  font-size: 10px;
+                  text-align: center;
+                  margin-top: 8px;
+                }
+              `}</style>
+              </p>
             </Box>
             {/* Photo Area */}
           </Box>
