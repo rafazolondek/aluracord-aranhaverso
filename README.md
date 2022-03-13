@@ -3,5 +3,5 @@ Projeto criado durante a Imersão React da Alura com a @alura, @omariosouto e @p
 Você pode dar uma olhada em como ficou esse projeto em aluracord-aranhaverso.vercel.app e também irei deixar uma printscreen aqui logo abaixo
 
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/71945361/158044560-a5ac7e77-8075-48ce-b8fb-fd6884e13e3b.png" width="700px"  
+  <img src="https://user-images.githubusercontent.com/71945361/158044560-a5ac7e77-8075-48ce-b8fb-fd6884e13e3b.png" >  
 </div>
